@@ -1,7 +1,7 @@
 package chapter10.gumballstate
 
 /**
- * 동전 있음
+ * 보너스 알맹이 당첨
  */
 class WinnerState(private val gumballMachine: GumballMachine) : State {
     override fun insertQuarter() {
@@ -33,6 +33,6 @@ class WinnerState(private val gumballMachine: GumballMachine) : State {
     }
 
     override fun refill() {
-
+        // do nothing
     }
 }

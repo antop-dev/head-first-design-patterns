@@ -20,11 +20,11 @@ class SoldOutState(private val gumballMachine: GumballMachine) : State {
         println("알맹이를 내보낼 수 없습니다.")
     }
 
-    override fun toString(): String {
-        return "매진"
-    }
-
     override fun refill() {
         gumballMachine.state = gumballMachine.noQuarterState
+    }
+
+    override fun toString(): String {
+        return "매진"
     }
 }

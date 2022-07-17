@@ -27,7 +27,7 @@ open class SoldState(private val gumballMachine: GumballMachine) : State {
     }
 
     override fun refill() {
-
+        // do nothing
     }
 
     override fun toString(): String {
