@@ -22,7 +22,7 @@ class WinnerState(private val gumballMachine: GumballMachine) : State {
             gumballMachine.state = gumballMachine.soldOutState
         } else {
             gumballMachine.releaseBall()
-            println("훅하드립니다! 알맹이를 하나 더 받으실 수 있습니다.")
+            println("축하드립니다! 알맹이를 하나 더 받으실 수 있습니다.")
             if (gumballMachine.count > 0) {
                 gumballMachine.state = gumballMachine.noQuarterState
             } else {
